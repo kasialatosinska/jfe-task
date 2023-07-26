@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Youtube Channels</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="wrapper">
+        <header class="wrapper__header">
+            <h1 class="header">
+                <img class="header__logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png" alt="Channels">
+                <span>Channels</span>
+            </h1>
+            <button id="contrast-btn" class="contrast-btn button">
+                Change contrast
+            </button>
+        </header>
+        <main class="wrapper__main js-content">
+            <div class="js-channels">
+            </div>
+        </main>
+        <div class="wrapper__filter">
+            <div class="filter">
+                <input id= "search" class="filter__input" type="text" placeholder="filter channels...">
+            </div>
+        </div>
+        <aside class="wrapper__aside">
+            <div class="sort"> 
+                <h3 class="sort__header">Sort channels by:</h3>
+                <ul class="sort__options">
+                    <li>
+                        <input class="choice choice--radio" name="sort" type="radio" id="sort-title" value="title">
+                        <label class="choice__label" for="sort-title">title</label>
+                    </li>
+                    <li>
+                        <input class="choice choice--radio" name="sort" type="radio" id="sort-subscribers" value="subscribers">
+                        <label class="choice__label" for="sort-subscribers">subscribers</label>
+                    </li>
+                    <li>
+                        <input class="choice choice--radio" name="sort" type="radio" id="sort-videos" value="videos">
+                        <label class="choice__label" for="sort-videos">videos</label>
+                    </li>
+                    <li>
+                        <input class="choice choice--radio" name="sort" type="radio" id="sort-views" value="views">
+                        <label class="choice__label" for="sort-views">views</label>
+                    </li>
+                </ul>
+                <button id="clear-btn" class="button">Clear</button>
+            </div>
+        </aside>
+    </body>
+    <script src="script.js"></script>
+</html>
